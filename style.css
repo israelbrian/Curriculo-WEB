@@ -17,7 +17,6 @@ font-family: 'Open Sans', sans-serif;
     
 }*/
 
-
 /*ESTILOS GERAIS */
 html, body, figure, img, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul, li, a, main {
     margin: 0;
@@ -26,6 +25,7 @@ html, body, figure, img, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul, li
     list-style: none;
     text-decoration: none;
 }
+
 .coluna{
     flex-basis: 49%;
 }
