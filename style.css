@@ -39,10 +39,11 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-
 /*HEADER*/
+
 header{
-    background-color: rgb(113, 34, 150) ;/* rgb(48 48 48)ciano | rgb(237 64 60)red |  #45dbfc*/
+    background-color: rgb(113, 34, 150); 
+    /* roxo rgb(113, 34, 150) | rgb(48 48 48)ciano | rgb(237 64 60)red |  #45dbfc*/
     padding: 30px 30px 0; 
 }
 header .container{
@@ -60,10 +61,33 @@ header .coluna-direita{
 }
 header .coluna img{
     max-width: 100%;
+    /* box-shadow: 10px 10px 10px 10px rgb(255, 0, 0); */
+    /* border: 1px solid red; */
 }
+
+header .coluna img:hover {
+    /* border: 5px solid rgb(255, 96, 96, 0.5); */
+    box-shadow:  -10px 5px rgba(47, 5, 83, 0.2); /* rgb(20, 1, 37, 0.3); */
+    margin-left: 15px;
+
+}
+
 header .coluna h1{
     font-size: 1.5rem;
 }
+
+header .coluna h1:hover {
+    color: rgb(144, 82, 185);
+    width: 180px;
+    padding-left: 5px;
+}
+
+header .coluna p:hover  {
+    color: rgb(186, 146, 212);
+    width: 180px;
+    padding-left: 5px;
+}
+
 header .coluna p{
     font-size: 1rem;
     color: #636363;
@@ -79,42 +103,18 @@ header .coluna ul li a{
     color: black;
 }
 
+header .coluna ul li a:hover{
+    /* color: rgb(241, 32, 32); red */
+    color: rgb(186, 146, 212);
+    margin-left: 5px;
+}
 
-/*FOOTER*/
-footer{
-    background-color:rgb(48 48 48);/*#04133d;*/
-}
-footer .container{
-    padding: 20px;
-}
-footer nav ul li a{
-    color: white;
-}
-footer nav ul li{
-    color: white;
-}
-footer nav .info-contato li{
-    margin: 0 0 15px;   
-}
-footer nav .redes-sociais{
-    border-top: 1px solid rgb(255 255 255 / 28%);
-    margin: 20px 0 20px;
-    padding: 35px 0 0;
-    text-align: center;
-}
-footer nav .redes-sociais li{
-    margin: 15px 28px;
-    text-align: center;
-    display: inline-block;
-}
-footer nav .redes-sociais li a img{
-    width: 50px;
-}
 /*PÁGINA INICIAL*/
+
 main .coluna{
     padding: 20px;
 }
-main .coluna section{
+main .coluna section {
     border-bottom: 1px solid rgb(217 217 217) ;/*#d4e9ff*/
     margin: 0 0 20px;
     min-width: 100px;
@@ -141,12 +141,82 @@ main .coluna section ul li strong{
     display: inline-block;
 }
 
+/* COLUNA DIREITA HOVER  */
+
+.coluna-esquerda section:hover, .coluna-esquerda section:hover p  {
+    margin-left: 10px;
+    margin-bottom: 5px;
+    color: cornsilk;
+    background: rgb(113, 34, 150);  /* color: rgb(255, 76, 76); */
+    border-radius: 10px;
+}
+
+.coluna-esquerda section ul li:hover{
+    color: cornsilk;
+    background: rgb(62, 5, 88); 
+    padding: 15px;
+    /* padding-bottom: 15px; */
+    border-radius: 10px;
+}
+
+/* COLUNA ESQUERDA HOVER  */
+
+.coluna-direita section ul li:hover{
+    color: cornsilk;
+    background: rgb(113, 34, 150); 
+    /* rgb(62, 5, 88) */
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.coluna-direita section ul li:hover p {
+    color: cornsilk;
+    background: rgb(113, 34, 150); 
+    border-radius: 10px;
+}
+
+/*FOOTER*/
+
+footer {
+    background-color:rgb(48 48 48);/*#04133d;*/
+}
+footer .container {
+    padding: 20px;
+}
+footer nav ul li a{
+    color: cornsilk;
+}
+
+footer nav ul li a:hover {
+    color: rgb(186, 146, 212);
+}
+
+
+footer nav ul li{
+    color: white;
+}
+footer nav .info-contato li {
+    margin: 0 0 15px;   
+}
+footer nav .redes-sociais{
+    border-top: 1px solid rgb(255 255 255 / 28%);
+    margin: 20px 0 20px;
+    padding: 35px 0 0;
+    text-align: center;
+}
+footer nav .redes-sociais li{
+    margin: 15px 28px;
+    text-align: center;
+    display: inline-block;
+}
+footer nav .redes-sociais li a img{
+    width: 50px;
+}
+
 /*EXTRAS*/
 
-
-
-
 /*@MEDIA*/
+
 @media only screen and (min-width: 768px){
     .linha{
         display: flex;
