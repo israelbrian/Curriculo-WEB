@@ -209,6 +209,11 @@ footer nav .redes-sociais li{
     text-align: center;
     display: inline-block;
 }
+
+footer nav ul li:hover {
+    /* color: rgb(186, 146, 212); */
+    padding-top: 5px;
+}
 footer nav .redes-sociais li a img{
     width: 50px;
 }
